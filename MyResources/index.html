@@ -11,6 +11,23 @@
 </head>
 
 <body>
+    <header>
+        <a class="logo" href="#">LeanrIt</a>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <!-- Logged-in users -->
+            <a href="#">Create Course</a>
+            <button class="logout-popup">Logout</button>
+            <!-- Guest users -->
+            <button class="btnLogin-popup">Login</button>
+            <button class="register-popup">Register</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+    </main>
 
     <!-- Login Page ( Only for Guest users ) -->
     <div class="login-page">
@@ -43,7 +60,7 @@
     <section id="create-page" class="auth">
         <div class="form">
             <h1>Create Course</h1>
-            <form class="login-form">
+            <form class="create-page">
                 <input type="text" id="title" name="title" placeholder="Course Name">
                 <input type="text" id="category" name="category" placeholder="Enter course category">
                 <input type="number" id="maxLevel" name="maxLevel" min="1" placeholder="Number of weeks">
