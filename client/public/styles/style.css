@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+@import "./details.css";
+@import "./navigation.css";
+@import "./footer.css";
+@import "./catalog.css";
+@import "./general.css";
+@import "./create-edit.css";
+@import "./create-edit-login-register.css";
+@import "./welcome.css";

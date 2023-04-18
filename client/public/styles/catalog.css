@@ -1,0 +1,108 @@
+#catalog-page {
+    background-color: transparent;
+    box-shadow: 0px 0px 40px 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    width: 70%;
+    font-family: "Roboto", sans-serif;
+    margin: 240px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+  }
+  
+  #catalog-page>h1 {
+    color: #000000;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  .outDIV-element {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+  .allGames {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin: 30px;
+    overflow: hidden;
+    width: 600px auto;
+    min-height: 210px;
+    height: auto;
+    display: flex;
+  }
+  
+  .allGames-info {
+    padding: 30px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .allGames-info>img {
+    margin-top: -10px;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    float: right;
+    padding: 5px;
+  }
+  
+  .allGames-info>h6 {
+    font-size: 32px;
+    font-weight: 1500;
+    color: #161618;
+    margin-top: -10px;
+  }
+  
+  .allGames-info>h2 {
+    font-size: 20px;
+    font-weight: 750;
+    color: #161618;
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+  
+  .details-button {
+    background-color: transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 2px;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+  }
+  
+  .details-button:hover {
+    background-color: #4CAF50;
+  }
+  
+  .allGames-info .details-button {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+  }
+  
+  .allGames-info .details-button:hover {
+    color: #fff;
+  }
+  
+  #catalog-page h3 {
+    font-size: 32px; 
+    text-align: center;
+  }
+  #catalog-page h3 a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
