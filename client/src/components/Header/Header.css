@@ -65,6 +65,7 @@ header {
     font-weight: 500;
     margin-left: 40px;
     transition: .3s;
+    padding: 14px 30px;
 }
 
 .navigation .btnLogin-popup:hover,
