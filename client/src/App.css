@@ -6,9 +6,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;      
   }
-  
+
   body {
-    background-image: url('../images/bg.jpg');
+    background-image: url('../public/images/bg.jpg');
     background-color: lightgreen;
     background-attachment: fixed;
     -webkit-background-size: cover;

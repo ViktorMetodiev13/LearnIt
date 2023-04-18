@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
-import * as courseService from './services/CourseService'
+import * as courseService from './services/CourseService';
 
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
@@ -12,7 +12,9 @@ import { CreateCourse } from "./components/CreateCourse/CreateCourse";
 import { Catalog } from "./components/Catalog/Catalog";
 import { EditCourse } from "./components/EditCourse/EditCourse";
 import { NotFound } from "./components/NotFound/NotFound";
+import { CourseDetails } from "./components/CourseDetails/CourseDetails";
 
+import "./App.css";
 
 function App() {
     const navigate = useNavigate();
@@ -44,6 +46,7 @@ function App() {
                     <Route path="/register" element={<Register />} />
                     <Route path="/create-course" element={<CreateCourse onCreateCourseSubmit={onCreateCourseSubmit}/>} />
                     <Route path="/catalog" element={<Catalog courses={courses}/>} />
+                    <Route path="/catalog/:courseId" element={<CourseDetails />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </main>
