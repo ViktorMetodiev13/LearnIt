@@ -1,6 +1,5 @@
-import { Register } from "../Register/Register";
 import "./Header.css"
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
     return (

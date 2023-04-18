@@ -1,4 +1,7 @@
+import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
+
+import * as courseService from './services/CourseService'
 
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
@@ -12,6 +15,15 @@ import { NotFound } from "./components/NotFound/NotFound";
 
 
 function App() {
+    const [courses, setCourses] = useState([]); 
+
+    useEffect(() => {
+        courseService.getAll()
+            .then(result => {
+                setCourses(result);
+            });
+    }, []);
+
     return (
         <div id="box">
             <Header />
@@ -22,7 +34,7 @@ function App() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/create-course" element={<CreateCourse />} />
-                    <Route path="/catalog" element={<Catalog />} />
+                    <Route path="/catalog" element={<Catalog courses={courses}/>} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </main>
