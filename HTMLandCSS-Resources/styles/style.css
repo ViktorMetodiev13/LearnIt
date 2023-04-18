@@ -324,6 +324,11 @@ body {
   margin-bottom: 70px;
 }
 
+.outDIV-element {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
 .allGames {
   background-color: #fff;
   border-radius: 10px;
