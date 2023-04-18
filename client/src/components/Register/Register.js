@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./Register.css";
 
 export const Register = () => {
@@ -10,7 +12,7 @@ export const Register = () => {
                     <input type="password" name="password" placeholder="password" />
                     <input type="password" name="repass" placeholder="confirm password" />
                     <button>Sign Up</button>
-                    <p className="message">Already registered? <a href="#">Sign In</a></p>
+                    <p className="message">Already registered? <Link to="/login">Sign In</Link></p>
                 </form>
             </div>
         </div>

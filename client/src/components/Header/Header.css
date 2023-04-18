@@ -15,7 +15,7 @@ header {
 }
 
 .logo {
-    font-size: 32px;
+    font-size: 38px;
     user-select: none;
     text-decoration: none;
     color: #fff;
@@ -28,6 +28,7 @@ header {
     font-weight: 500;
     margin-left: 40px;
     color: #fff;
+    font-size: 20px;
 }
 
 .navigation a::after {
@@ -49,7 +50,7 @@ header {
     transform: scaleX(1);
 }
 
-.navigation .btnLogin-popup,
+.btnLogin-popup,
 .register-popup,
 .logout-popup
 {

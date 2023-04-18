@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 import "./Footer.css"
 
 export const Footer = () => {
     return (
         <section className="footer-page">
             <div className="footer">
-                <h1 className="mainlogo"><a href="#">LearnIt</a></h1>
+                <h1 className="mainlogo"><Link to="/">LearnIt</Link></h1>
                 <ul>
                     <li>Privacy policy</li>
                     <li>Terms and conditions</li>
