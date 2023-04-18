@@ -1,24 +1,10 @@
-.login-page {
-    width: 500px;
-    padding: 7% 0 0;
-    margin: auto;
-  }
-  
-  .register-page {
-    width: 500px;
-    padding: 6% 0 0;
-    margin: auto;
-  }
-  
-  .create-page,
-  .edit-page 
-  {
+.create-page {
     width: 500px;
     padding: 4% 0 0;
     margin: auto;
+    margin-bottom: 150px;
   }
-  
-  
+
   .form h1 {
     font-family: "Roboto", sans-serif;
     font-size: 30px;
@@ -62,18 +48,7 @@
   .form button:hover,.form button:active,.form button:focus {
     background: #43A047;
   }
-  .form .message {
-    margin: 15px 0 0;
-    color: #b3b3b3;
-    font-size: 16px;
-  }
-  .form .message a {
-    color: #4CAF50;
-    text-decoration: none;
-  }
-  .form .register-form {
-    display: none;
-  }
+
   .container {
     position: relative;
     z-index: 1;
