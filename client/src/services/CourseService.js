@@ -8,3 +8,9 @@ export const getAll = async () => {
 
     return courses;
 };
+
+export const create = async (courseData) => {
+    const result = await request.post(baseUrl, courseData);
+
+    return result;
+}

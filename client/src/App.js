@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 
 import * as courseService from './services/CourseService'
 
@@ -15,6 +15,7 @@ import { NotFound } from "./components/NotFound/NotFound";
 
 
 function App() {
+    const navigate = useNavigate();
     const [courses, setCourses] = useState([]); 
 
     useEffect(() => {
@@ -23,6 +24,14 @@ function App() {
                 setCourses(result);
             });
     }, []);
+
+    const onCreateCourseSubmit = async (data) => {
+        const newCourse = await courseService.create(data);
+
+        setCourses(state => ([...state, newCourse]));
+
+        navigate('/catalog');
+    }
 
     return (
         <div id="box">
@@ -33,7 +42,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
-                    <Route path="/create-course" element={<CreateCourse />} />
+                    <Route path="/create-course" element={<CreateCourse onCreateCourseSubmit={onCreateCourseSubmit}/>} />
                     <Route path="/catalog" element={<Catalog courses={courses}/>} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
