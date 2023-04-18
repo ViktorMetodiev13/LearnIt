@@ -12,23 +12,23 @@
 </head>
 
 <body>
-    <!-- Navigation -->
     <header>
-        <a class="logo" href="#">LearnIt</a>
-        <nav class="navigation">
+        <!-- Navigation -->
+        <a className="logo" href="#">LearnIt</a>
+        <nav className="navigation">
             <a href="#">Home</a>
             <a href="#">Courses</a>
             <!-- Logged-in users -->
             <a href="#">Create Course</a>
-            <button class="logout-popup">Logout</button>
+            <button className="logout-popup">Logout</button>
             <!-- Guest users -->
-            <button class="btnLogin-popup">Login</button>
-            <button class="register-popup">Register</button>
+            <button className="btnLogin-popup">Login</button>
+            <button className="register-popup">Register</button>
         </nav>
     </header>
 
     <!--Home Page-->
-    <div class="welcome-message">
+    <div className="welcome-message">
         <h1>Learn without limits</h1>
         <h3>Looking to start, switch, or advance your career?</h3>
         <h3>LearnIt is the perfect place for you. With our professional courses you can achieve the height of success in
@@ -41,41 +41,41 @@
     </main>
 
     <!-- Login Page ( Only for Guest users ) -->
-    <div class="login-page">
-        <div class="form">
+    <div className="login-page">
+        <div className="form">
             <h1>Have an Account?</h1>
-            <form class="login-form">
+            <form className="login-form">
                 <input type="text" name="username" placeholder="username" />
                 <input type="password" name="password" placeholder="password" />
                 <button>Sign in</button>
-                <p class="message">Not registered? <a href="#">Create an account</a></p>
+                <p className="message">Not registered? <a href="#">Create an account</a></p>
             </form>
         </div>
     </div>
 
     <!-- Register Page ( Only for Guest users ) -->
-    <div class="register-page">
-        <div class="form">
+    <div className="register-page">
+        <div className="form">
             <h1>Create Your Account</h1>
-            <form class="login-form">
+            <form className="login-form">
                 <input type="text" name="username" placeholder="username" />
                 <input type="password" name="password" placeholder="password" />
                 <input type="password" name="repass" placeholder="confirm password" />
                 <button>Sign Up</button>
-                <p class="message">Already registered? <a href="#">Sign In</a></p>
+                <p className="message">Already registered? <a href="#">Sign In</a></p>
             </form>
         </div>
     </div>
 
     <!-- Create Page ( Only for logged-in users ) -->
-    <section class="create-page" class="auth">
-        <div class="form">
+    <section className="create-page" className="auth">
+        <div className="form">
             <h1>Create Course</h1>
-            <form class="login-form">
-                <input type="text" id="title" name="title" placeholder="Course Name">
-                <input type="text" id="category" name="category" placeholder="Enter course category">
-                <input type="number" id="maxLevel" name="maxLevel" min="1" placeholder="Number of weeks">
-                <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo">
+            <form className="login-form">
+                <input type="text" id="title" name="title" placeholder="Course Name" />
+                <input type="text" id="category" name="category" placeholder="Enter course category" />
+                <input type="number" id="maxLevel" name="maxLevel" min="1" placeholder="Number of weeks" />
+                <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo" />
                 <textarea name="description" id="description" placeholder="Course description"></textarea>
                 <button>Create Course</button>
             </form>
@@ -83,14 +83,14 @@
     </section>
 
     <!-- Edit Page ( Only for the creator )-->
-    <section class="edit-page" class="auth">
-        <div class="form">
+    <section className="edit-page" className="auth">
+        <div className="form">
             <h1>Edit Course</h1>
-            <form class="login-form">
-                <input type="text" id="title" name="title" placeholder="Course Name">
-                <input type="text" id="category" name="category" placeholder="Enter course category">
-                <input type="number" id="maxLevel" name="maxLevel" min="1" placeholder="Number of weeks">
-                <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo">
+            <form className="login-form">
+                <input type="text" id="title" name="title" placeholder="Course Name" />
+                <input type="text" id="category" name="category" placeholder="Enter course category" />
+                <input type="number" id="maxLevel" name="maxLevel" min="1" placeholder="Number of weeks" />
+                <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo" />
                 <textarea id="description" name="description" placeholder="Course description"></textarea>
                 <button>Edit Course</button>
             </form>
@@ -101,51 +101,51 @@
     <section id="catalog-page">
         <h1>All Courses</h1>
         <!-- Display div: with information about every game (if any) -->
-        <div class="outDIV-element">
-            <div class="allGames">
-                <div class="allGames-info">
-                    <img src="./images/reactLogo.jpg">
+        <div className="outDIV-element">
+            <div className="allGames">
+                <div className="allGames-info">
+                    <img src="./images/reactLogo.jpg" />
                     <h6>React JS</h6>
                     <h2>Technology, Coding, JS</h2>
-                    <a href="#" class="details-button">Details</a>
+                    <a href="#" className="details-button">Details</a>
                 </div>
             </div>
-            <div class="allGames">
-                <div class="allGames-info">
-                    <img src="./images/js-advanced-image.jpg">
+            <div className="allGames">
+                <div className="allGames-info">
+                    <img src="./images/js-advanced-image.jpg" />
                     <h6>JS Advanced</h6>
                     <h2>Coding, JS-advanced</h2>
-                    <a href="#" class="details-button">Details</a>
+                    <a href="#" className="details-button">Details</a>
                 </div>
             </div>
-            <div class="allGames">
-                <div class="allGames-info">
-                    <img src="./images/angular-image.jpg">
+            <div className="allGames">
+                <div className="allGames-info">
+                    <img src="./images/angular-image.jpg" />
                     <h6>Angular</h6>
                     <h2>Angular, TypeScript</h2>
-                    <a href="#" class="details-button">Details</a>
+                    <a href="#" className="details-button">Details</a>
                 </div>
             </div>
         </div>
 
         <!-- Display paragraph: If there is no games  -->
-        <h3 class="no-articles">No courses yet</h3>
+        <h3 className="no-articles">No courses yet</h3>
         <h3>Want to create one yourself? <a href="#">Create Course</a></h3>
     </section>
 
     <!--Details Page-->
     <section id="game-details">
         <h1>Course Details</h1>
-        <div class="info-section">
+        <div className="info-section">
 
-            <div class="game-header">
-                <img class="game-img" src="./images/reactLogo.jpg">
+            <div className="game-header">
+                <img className="game-img" src="./images/reactLogo.jpg" />
                 <h1>React JS</h1>
-                <span class="levels">Time to Complete: 8 weeks</span>
-                <p class="type">Technology, Coding, JS</p>
+                <span className="levels">Time to Complete: 8 weeks</span>
+                <p className="type">Technology, Coding, JS</p>
             </div>
 
-            <p class="text">
+            <p className="text">
                 React (also known as React.js or ReactJS) is a free and open-source front-end
                 JavaScript library for building user interfaces based on components. It is
                 maintained by Meta (formerly Facebook) and a community of individual developers
@@ -153,33 +153,33 @@
             </p>
 
             <!-- Edit/Delete buttons ( Only for creator of this game )  -->
-            <div class="buttons">
-                <a href="#" class="button">Edit</a>
-                <a href="#" class="button">Delete</a>
+            <div className="buttons">
+                <a href="#" className="button">Edit</a>
+                <a href="#" className="button">Delete</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <section class="footer-page">
-        <div class="footer">
-            <h1 class="mainlogo"><a href="#">LearnIt</a></h1>
+    <section className="footer-page">
+        <div className="footer">
+            <h1 className="mainlogo"><a href="#">LearnIt</a></h1>
             <ul>
                 <li>Privacy policy</li>
                 <li>Terms and conditions</li>
                 <li>Payment options</li>
             </ul>
-            <div class="contact-us">
+            <div className="contact-us">
                 <h1>Follow us on:</h1>
-                <div class="icons">
+                <div className="icons">
                     <a href="#">
-                        <i class="fa-brands fa-linkedin"></i>
+                        <i className="fa-brands fa-linkedin"></i>
                     </a>
                     <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
+                        <i className="fa-brands fa-instagram"></i>
                     </a>
                     <a href="#">
-                        <i class="fa-brands fa-facebook"></i>
+                        <i className="fa-brands fa-facebook"></i>
                     </a>
                 </div>
             </div>
