@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
 .footer {
     position: relative;
     width: 100%;
@@ -6,6 +8,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: "Roboto", sans-serif;
   }
   .footer {
     text-decoration: none;
@@ -44,7 +47,6 @@
     text-decoration: none;
     font-size: 32px;
     color: #000000;
-    font-family: "Roboto", sans-serif;
   }
   
   .footer h1 a:hover {
