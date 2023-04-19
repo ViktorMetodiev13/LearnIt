@@ -54,7 +54,8 @@ function App() {
         onLoginSubmit,
         userId: auth._id,
         token: auth.accessToken,
-        username: auth.username
+        username: auth.username,
+        isAuthenticated: !!auth.accessToken,
     }
 
     return (
