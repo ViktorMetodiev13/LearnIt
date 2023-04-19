@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
 import * as courseService from './services/CourseService';
+import { AuthContext } from "./contexts/authContext";
+import * as authService from "./services/authService";
 
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
@@ -18,7 +20,8 @@ import "./App.css";
 
 function App() {
     const navigate = useNavigate();
-    const [courses, setCourses] = useState([]); 
+    const [courses, setCourses] = useState([]);
+    const [auth, setAuth] = useState({});
 
     useEffect(() => {
         courseService.getAll()
@@ -35,24 +38,45 @@ function App() {
         navigate('/catalog');
     }
 
+    const onLoginSubmit = async (data) => {
+        try {
+            const result = await authService.login(data);
+            
+            setAuth(result);
+
+            navigate('/catalog');
+        } catch (error) {
+            console.log('There is a problem');
+        }
+    }
+
+    const context = {
+        onLoginSubmit,
+        userId: auth._id,
+        token: auth.accessToken,
+        username: auth.username
+    }
+
     return (
-        <div id="box">
-            <Header />
+        <AuthContext.Provider value={context}>
+            <div id="box">
+                <Header />
 
-            <main id="main-content">
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/register" element={<Register />} />
-                    <Route path="/create-course" element={<CreateCourse onCreateCourseSubmit={onCreateCourseSubmit}/>} />
-                    <Route path="/catalog" element={<Catalog courses={courses}/>} />
-                    <Route path="/catalog/:courseId" element={<CourseDetails />} />
-                    <Route path="*" element={<NotFound />} />
-                </Routes>
-            </main>
+                <main id="main-content">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/register" element={<Register />} />
+                        <Route path="/create-course" element={<CreateCourse onCreateCourseSubmit={onCreateCourseSubmit} />} />
+                        <Route path="/catalog" element={<Catalog courses={courses} />} />
+                        <Route path="/catalog/:courseId" element={<CourseDetails />} />
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </main>
 
-            <Footer />
-        </div>
+                <Footer />
+            </div>
+        </AuthContext.Provider>
     );
 }
 
