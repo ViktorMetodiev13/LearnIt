@@ -29,6 +29,7 @@ This opens the app at http://localhost:3000 in your browser. However it will not
 ```
 $ cd ./server
 $ npm install
-$ npm start
+$ node ./server.js
 ```
+
 And the server will start listening on port 8080.
