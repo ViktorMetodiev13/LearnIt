@@ -23,3 +23,11 @@ $ cd ./server
 $ npm install
 $ npm start
 ```
+
+This opens the app at http://localhost:3000 in your browser. However it will not work until you don't start the RESTful API server. To start the server you have to be in the project directory and do the following steps:
+
+```
+$ cd ./server
+$ npm install
+$ npm start
+```
