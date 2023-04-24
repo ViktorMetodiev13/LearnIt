@@ -12,4 +12,14 @@ LearnIt is a platform where a person can learn useful skills through our profess
     * React: 18.2.0
 
 * Server
-    * Softuni Practice Server 
+    * Softuni Practice Server - https://github.com/softuni-practice-server/softuni-practice-server
+
+# How to run it? Here is a quick guide
+
+To run this project, in the project directory, use the following commands in a new terminal:
+
+```
+$ cd ./server
+$ npm install
+$ npm start
+```
