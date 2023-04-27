@@ -6,7 +6,6 @@ Here you can enroll in courses as well as to create ones yourself!
 # General Information
 
 * The main purpose of the app is to view courses as well as create ones
-* The is a catalog
 
 # Technologies
 
