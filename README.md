@@ -1,11 +1,11 @@
 # LearnIt
 
-Simple easy to use platform!
-LearnIt is a platform where a person can learn useful skills through our professional courses!
-Here you can enroll in courses as well as to create ones yourself!
+* LearnIt is a platform where a person can learn useful skills through our professional courses!
+* Here you can enroll in courses as well as to create ones yourself!
 
 # General Information
 
+* Simple easy to use platform!
 * The main purpose of the app is to view courses as well as create ones
 
 # Technologies
