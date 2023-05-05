@@ -1,5 +1,6 @@
 # LearnIt
 
+Simple easy to use platform!
 LearnIt is a platform where a person can learn useful skills through our professional courses!
 Here you can enroll in courses as well as to create ones yourself!
 
