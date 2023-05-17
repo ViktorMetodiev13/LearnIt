@@ -1,9 +1,9 @@
 # LearnIt
 
+- Project Status - Ongoing 
+
 * LearnIt is a platform where a person can learn useful skills through our professional courses!
 * Here you can enroll in courses as well as to create ones yourself!
-
-# Project Status - Ongoing 
 
 # General Information
 
