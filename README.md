@@ -23,7 +23,7 @@
 To run this project, in the project directory, use the following commands in a new terminal:
 
 ```
-$ cd ./server
+$ cd ./client
 $ npm install
 $ npm start
 ```
