@@ -15,7 +15,6 @@ export const Login = () => {
     const { values, changeHandler, onSubmit } = useForm({
         [LoginFormKeys.Username]: '',
         [LoginFormKeys.Password]: '',
-        [LoginFormKeys.Email]: '',
     }, onLoginSubmit);
 
     return (
