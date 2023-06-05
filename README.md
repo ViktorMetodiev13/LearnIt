@@ -14,6 +14,7 @@
 
 * Client 
     * React: 18.2.0
+    * CSS3
 
 * Server
     * Softuni Practice Server - https://github.com/softuni-practice-server/softuni-practice-server
