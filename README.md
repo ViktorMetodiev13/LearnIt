@@ -33,7 +33,6 @@ This opens the app at http://localhost:3000 in your browser. However it will not
 
 ```
 $ cd ./server
-$ npm install
 $ node ./server.js
 ```
 
