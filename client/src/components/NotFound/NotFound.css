@@ -1,0 +1,20 @@
+.welcome-message {
+    display: inline-block;
+    padding: 8% 0 10% 35%;
+    text-align: center;
+    width: 30%;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 90px;
+}
+
+.welcome-message h1 {
+    font-size: 50px;
+}
+
+.welcome-message p {
+    font-size: 30px;
+}
+
+#links {
+    color: #FFFFFF;
+}

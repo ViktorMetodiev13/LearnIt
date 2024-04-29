@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnIt</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navigation -->
+        <a className="logo" href="#">LearnIt</a>
+        <nav className="navigation">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <!-- Logged-in users -->
+            <a href="#">Create Course</a>
+            <button className="logout-popup">Logout</button>
+            <!-- Guest users -->
+            <button className="btnLogin-popup">Login</button>
+            <button className="register-popup">Register</button>
+        </nav>
+    </header>
+
+    <!--Home Page-->
+    <div className="welcome-message">
+        <h1>Learn without limits</h1>
+        <h3>Looking to start, switch, or advance your career?</h3>
+        <h3>LearnIt is the perfect place for you. With our professional courses you can achieve the height of success in
+            no time</h3>
+        <p>Don't know where to start? We suggest <a href="#">Courses</a></p>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+    </main>
+
+    <!-- Login Page ( Only for Guest users ) -->
+    <div className="login-page">
+        <div className="form">
+            <h1>Have an Account?</h1>
+            <form className="login-form">
+                <input type="text" name="username" placeholder="username" />
+                <input type="password" name="password" placeholder="password" />
+                <button>Sign in</button>
+                <p className="message">Not registered? <a href="#">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Page ( Only for Guest users ) -->
+    <div className="register-page">
+        <div className="form">
+            <h1>Create Your Account</h1>
+            <form className="login-form">
+                <input type="text" name="username" placeholder="username" />
+                <input type="password" name="password" placeholder="password" />
+                <input type="password" name="repass" placeholder="confirm password" />
+                <button>Sign Up</button>
+                <p className="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Create Page ( Only for logged-in users ) -->
+    <section className="create-page" className="auth">
+        <div className="form">
+            <h1>Create Course</h1>
+            <form className="login-form">
+                <input type="text" id="title" name="title" placeholder="Course Name" />
+                <input type="text" id="category" name="category" placeholder="Enter course category" />
+                <input type="number" id="maxLevel" name="maxLevel" min="1" placeholder="Number of weeks" />
+                <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo" />
+                <textarea name="description" id="description" placeholder="Course description"></textarea>
+                <button>Create Course</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Edit Page ( Only for the creator )-->
+    <section className="edit-page" className="auth">
+        <div className="form">
+            <h1>Edit Course</h1>
+            <form className="login-form">
+                <input type="text" id="title" name="title" placeholder="Course Name" />
+                <input type="text" id="category" name="category" placeholder="Enter course category" />
+                <input type="number" id="maxLevel" name="maxLevel" min="1" placeholder="Number of weeks" />
+                <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo" />
+                <textarea id="description" name="description" placeholder="Course description"></textarea>
+                <button>Edit Course</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Catalogue -->
+    <section id="catalog-page">
+        <h1>All Courses</h1>
+        <!-- Display div: with information about every game (if any) -->
+        <div className="outDIV-element">
+            <div className="allGames">
+                <div className="allGames-info">
+                    <img src="./images/reactLogo.jpg" />
+                    <h6>React JS</h6>
+                    <h2>Technology, Coding, JS</h2>
+                    <a href="#" className="details-button">Details</a>
+                </div>
+            </div>
+            <div className="allGames">
+                <div className="allGames-info">
+                    <img src="./images/js-advanced-image.jpg" />
+                    <h6>JS Advanced</h6>
+                    <h2>Coding, JS-advanced</h2>
+                    <a href="#" className="details-button">Details</a>
+                </div>
+            </div>
+            <div className="allGames">
+                <div className="allGames-info">
+                    <img src="./images/angular-image.jpg" />
+                    <h6>Angular</h6>
+                    <h2>Angular, TypeScript</h2>
+                    <a href="#" className="details-button">Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Display paragraph: If there is no games  -->
+        <h3 className="no-articles">No courses yet</h3>
+        <h3>Want to create one yourself? <a href="#">Create Course</a></h3>
+    </section>
+
+    <!--Details Page-->
+    <section id="game-details">
+        <h1>Course Details</h1>
+        <div className="info-section">
+
+            <div className="game-header">
+                <img className="game-img" src="./images/reactLogo.jpg" />
+                <h1>React JS</h1>
+                <span className="levels">Time to Complete: 8 weeks</span>
+                <p className="type">Technology, Coding, JS</p>
+            </div>
+
+            <p className="text">
+                React (also known as React.js or ReactJS) is a free and open-source front-end
+                JavaScript library for building user interfaces based on components. It is
+                maintained by Meta (formerly Facebook) and a community of individual developers
+                and companies.
+            </p>
+
+            <!-- Edit/Delete buttons ( Only for creator of this game )  -->
+            <div className="buttons">
+                <a href="#" className="button">Edit</a>
+                <a href="#" className="button">Delete</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section className="footer-page">
+        <div className="footer">
+            <h1 className="mainlogo"><a href="#">LearnIt</a></h1>
+            <ul>
+                <li>Privacy policy</li>
+                <li>Terms and conditions</li>
+                <li>Payment options</li>
+            </ul>
+            <div className="contact-us">
+                <h1>Follow us on:</h1>
+                <div className="icons">
+                    <a href="#">
+                        <i className="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i className="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i className="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
