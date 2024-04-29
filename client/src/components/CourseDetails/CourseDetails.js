@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { getOne } from "../../services/courseService";
 
 export const CourseDetails = ({
-    onDeleteCourseSubmit
+    onDeleteCourseSubmit,
+    auth
 }) => {
     const { courseId } = useParams();
     const [course, setCourse] = useState({});
@@ -24,6 +25,8 @@ export const CourseDetails = ({
         onDeleteCourseSubmit(course._id);
     };
 
+    const isAuthenticated = auth._id;
+
     return (
         <section id="game-details">
             <h1>Course Details</h1>
@@ -38,11 +41,12 @@ export const CourseDetails = ({
 
                 <p className="text">{description}</p>
 
-                {/* <!-- Edit/Delete buttons ( Only for creator of this game )  --> */}
-                <div className="buttons">
-                    <Link to={`/catalog/${_id}/edit`} className="button">Edit</Link>
-                    <button className="button" onClick={onDeleteClick}>Delete</button>
-                </div>
+                {isAuthenticated && (
+                    <div className="buttons">
+                        <Link to={`/catalog/${_id}/edit`} className="button">Edit</Link>
+                        <button className="button" onClick={onDeleteClick}>Delete</button>
+                    </div>
+                )}
             </div>
         </section>
     )

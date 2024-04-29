@@ -115,7 +115,7 @@ function App() {
                     <Route path='/logout'></Route>
                     <Route path='/create-course' element={<CreateCourse onCreateCourseSubmit={onCreateCourseSubmit} />}></Route>
                     <Route path='/catalog' element={<Catalog courses={courses} />}></Route>
-                    <Route path='/catalog/:courseId' element={<CourseDetails onDeleteCourseSubmit={onDeleteCourseSubmit} />}></Route>
+                    <Route path='/catalog/:courseId' element={<CourseDetails onDeleteCourseSubmit={onDeleteCourseSubmit} auth={auth} />}></Route>
                     <Route path='/catalog/:courseId/edit' element={<EditCourse onEditCourseSubmit={onEditCourseSubmit} />}></Route>
                     <Route path='*' element={<NotFound />}></Route>
                 </Routes>
