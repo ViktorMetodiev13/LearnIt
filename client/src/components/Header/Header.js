@@ -23,6 +23,8 @@ export const Header = ({
         e.preventDefault();
     };
 
+    const isAuthenticated = auth._id;
+
     return (
 
         <header>
@@ -31,14 +33,14 @@ export const Header = ({
             <nav className="navigation">
                 <Link to="/">Home</Link>
                 <Link to="/catalog">Courses</Link>
-                {auth && (
+                {isAuthenticated && (
                     <>
                         <Link to="/create-course">Create Course</Link>
                         <Link to="/user-details" onClick={onUserAccountClick}>{auth.email}</Link>
                         <button className="logout-popup" onClick={onLogout}>Logout</button>
                     </>
                 )}
-                {!auth._id && (
+                {!isAuthenticated && (
                     <>
                         <button className="btnLogin-popup" onClick={onLoginClick}>Login</button>
                         <button className="register-popup" onClick={onRegisterClick}>Register</button>

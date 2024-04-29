@@ -5,7 +5,7 @@ export const Register = ({
     onRegisterSubmit
 }) => {
     const [values, setValues] = useState({
-        'username': '',
+        'email': '',
         'password': '',
         'confirmPassword': ''
     });
@@ -30,9 +30,9 @@ export const Register = ({
                 <form className="login-form" onSubmit={onSubmit}>
                     <input
                         type="text"
-                        name="username"
-                        placeholder="username"
-                        value={values.username}
+                        name="email"
+                        placeholder="email"
+                        value={values.email}
                         onChange={changeHanlder}
                     />
                     <input
