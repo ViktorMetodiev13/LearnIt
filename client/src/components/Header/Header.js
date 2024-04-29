@@ -19,6 +19,10 @@ export const Header = ({
         navigate("/register");
     };
 
+    const onUserAccountClick = (e) => {
+        e.preventDefault();
+    };
+
     return (
 
         <header>
@@ -30,11 +34,11 @@ export const Header = ({
                 {auth && (
                     <>
                         <Link to="/create-course">Create Course</Link>
-                        <Link to="/userDetails">{auth.email}</Link>
+                        <Link to="/user-details" onClick={onUserAccountClick}>{auth.email}</Link>
                         <button className="logout-popup" onClick={onLogout}>Logout</button>
                     </>
                 )}
-                {!auth && (
+                {!auth._id && (
                     <>
                         <button className="btnLogin-popup" onClick={onLoginClick}>Login</button>
                         <button className="register-popup" onClick={onRegisterClick}>Register</button>
