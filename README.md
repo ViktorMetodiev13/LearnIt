@@ -1,40 +1,55 @@
 # LearnIt
 
-- Project Status - Ongoing 
+LearnIt is a dynamic platform designed to help individuals acquire valuable skills through professional courses. Whether you want to enroll in courses or create your own, LearnIt provides a user-friendly environment for both learners and instructors.
 
-* LearnIt is a platform where a person can learn useful skills through our professional courses!
-* Here you can enroll in courses as well as to create ones yourself!
+## General Information
 
-# General Information
+LearnIt offers a straightforward and intuitive platform for accessing and creating educational content. The primary features of the app include:
 
-* Simple easy to use platform!
-* The main purpose of the app is to view courses as well as create ones
+- Enrolling in a wide variety of professional courses.
+- Creating and sharing your own courses with the community.
 
-# Technologies
+## Technologies Used
 
-* Client 
-    * React: 18.2.0
-    * CSS3
+### Client-Side
+- **React**: Version 18.2.0
+- **CSS3**
 
-* Server
-    * Softuni Practice Server - https://github.com/softuni-practice-server/softuni-practice-server
+### Server-Side
+- **Softuni Practice Server**: [Softuni Practice Server on GitHub](https://github.com/softuni-practice-server/softuni-practice-server)
 
-# How to run it? Here is a quick guide
+## Quick Start Guide
 
-To run this project, in the project directory, use the following commands in a new terminal:
+To run this project, follow these steps:
 
-```
-$ cd ./client
-$ npm install
-$ npm start
-```
+### Client Setup
 
-This opens the app at http://localhost:3000 in your browser. However it will not work until you don't start the RESTful API server. To start the server you have to be in the project directory and do the following steps:
+1. Open a terminal and navigate to the project directory.
+2. Move to the client directory:
+    ```
+    $ cd ./client
+    ```
+3. Install the necessary dependencies:
+    ```
+    $ npm install
+    ```
+4. Start the client application:
+    ```
+    $ npm start
+    ```
+   This will open the app in your browser at `http://localhost:3000`.
 
-```
-$ cd ./server
-$ node ./server.js
-```
+### Server Setup
 
-Then the server will start listening on port 8080.
+1. Ensure you are in the project directory.
+2. Navigate to the server directory:
+    ```
+    $ cd ./server
+    ```
+3. Start the RESTful API server:
+    ```
+    $ node ./server.js
+    ```
+   The server will start and listen on port 8080.
 
+With both the client and server running, you can now fully utilize the LearnIt platform.
