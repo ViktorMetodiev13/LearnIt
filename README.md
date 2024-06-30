@@ -6,7 +6,6 @@ LearnIt is a dynamic platform designed to help individuals acquire valuable skil
 
 LearnIt offers a straightforward and intuitive platform for accessing and creating educational content. The primary features of the app include:
 
-- Enrolling in a wide variety of professional courses.
 - Creating and sharing your own courses with the community.
 
 ## Technologies Used
