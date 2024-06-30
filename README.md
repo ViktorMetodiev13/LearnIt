@@ -11,7 +11,7 @@ LearnIt offers a straightforward and intuitive platform for accessing and creati
 ## Technologies Used
 
 ### Client-Side
-- **React**: Version 18.2.0
+- **ReactJS**
 - **CSS3**
 
 ### Server-Side
